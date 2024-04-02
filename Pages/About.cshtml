@@ -1,0 +1,14 @@
+﻿@page
+@model AboutModel
+@{
+    ViewData["Title"] = "About Us";
+}
+
+<h1>About Us</h1>
+<p>@ViewData["CompanyInfo"]</p>
+
+<div>
+    <a asp-page="./Index" class="btn btn-primary">Home</a>
+    <a asp-page="./Contact" class="btn btn-primary">Contact Us</a>
+    <a asp-page="./MyWork" class="btn btn-primary">Our Work</a>
+</div>

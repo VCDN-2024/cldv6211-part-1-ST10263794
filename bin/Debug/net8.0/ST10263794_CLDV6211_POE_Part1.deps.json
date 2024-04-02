@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ST10263794_CLDV6211_POE_Part1/1.0.0": {
+        "runtime": {
+          "ST10263794_CLDV6211_POE_Part1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ST10263794_CLDV6211_POE_Part1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

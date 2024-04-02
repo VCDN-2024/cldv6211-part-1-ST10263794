@@ -1,0 +1,28 @@
+﻿@page
+@model MyWorkModel
+@{
+    ViewData["Title"] = "My Work";
+}
+
+<h1>Our Work</h1>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var craftwork in ViewData["Craftworks"] as List<Craftwork>)
+    {
+        <div class="col">
+            <div class="card h-100">
+                <img src="@Url.Content(craftwork.ImagePath)" class="card-img-top" alt="@craftwork.Title">
+                <div class="card-body">
+                    <h5 class="card-title">@craftwork.Title</h5>
+                    <p class="card-text">@craftwork.Description. Price: R@craftwork.Price</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<div>
+    <a asp-page="./Index" class="btn btn-primary">Home</a>
+    <a asp-page="./About" class="btn btn-primary">About Us</a>
+    <a asp-page="./Contact" class="btn btn-primary">Contact Us</a>
+</div>
